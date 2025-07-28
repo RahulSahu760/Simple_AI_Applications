@@ -1,7 +1,7 @@
 # 🗣️ Voice Assistant with Silero STT & TTS + Mistral AI LLM 
 
 This project implements a simple **offline voice assistant** that listens to speech, generates a response using a local LLM, and replies with synthesized voice.
-
+Note: The collab file's widget metadata got corrupted, so I uploaded the .py file
 ---
 
 ## 🚀 Overview
@@ -26,11 +26,3 @@ All components are open-source and can run fully offline (after initial download
   - Installed locally using Hugging Face Transformers.
 
 ---
-
-## 🧩 Implementation Summary
-
-### 1. Speech-to-Text (STT)
-I used Silero’s pretrained STT model to convert voice input to text:
-```python
-import torch
-model = torch.hub.load('snakers4/silero-models', 'silero_stt', language='en')
